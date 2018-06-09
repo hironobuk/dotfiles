@@ -1,0 +1,31 @@
+[user]
+    email = 
+    name = 
+[alias]
+    ad = add
+    br = branch
+    co = checkout
+    st = status
+    d1 = diff HEAD~
+    d2 = diff HEAD~2
+    d3 = diff HEAD~3
+    d4 = diff HEAD~4
+    d5 = diff HEAD~5
+    graph = log --pretty-format:\"%h %s\" --graph
+    mlog = log --no-merges master..HEAD
+    gclean = clean -Xdf
+    pr = "!pr() { git fetch ${2:-origin} pull/$1/head:pr$1; git checkout pr$1; }; pr"
+[grep]
+    lineNumber = true
+[color]
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+[color "grep"]
+    linenumber = green
+    match = red bold
+    filename = magenta
+[core]
+    editor = vim
+
