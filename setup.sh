@@ -6,7 +6,7 @@ fi
 
 curl -s https://raw.githubusercontent.com/hironobuk/dotfiles/master/.bashrc >> ${HOME}/.bashrc
 
-for file in .bash_profile .vimrc .gitconfig; do
+for file in .bash_profile .vimrc .gitconfig .screenrc .tmux.conf; do
   curl -s -o ${HOME}/${file} https://raw.githubusercontent.com/hironobuk/dotfiles/master/${file}
 done
 
