@@ -2,8 +2,8 @@
 eval $(ssh-agent)
 ssh-add
 
-source ${HOME}/.git-completion.bash
-source ${HOME}/.git-prompt.sh
+source "${HOME}/.git-completion.bash"
+source "${HOME}/.git-prompt.sh"
 
 PS1='\n'                       # new line
 PS1="$PS1"'\[\033[32m\]'       # change to green
