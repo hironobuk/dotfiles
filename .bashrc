@@ -26,3 +26,6 @@ alias tmux='tmux -2 '
 alias ..='cd ../'
 alias ....='cd ../../'
 
+if [[ -n "$(which docker 2> /dev/null)" ]]; then
+  alias docker-stop='sudo docker ps --format "{{.ID}}" | xargs --no-run-if-empty sudo docker stop'
+fi
