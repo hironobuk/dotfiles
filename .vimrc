@@ -97,6 +97,7 @@ au BUfNewFile,BufRead *.php    set expandtab tabstop=4 shiftwidth=4
 au BUfNewFile,BufRead *.py     set expandtab tabstop=4 shiftwidth=4
 au BUfNewFile,BufRead *.groovy set expandtab tabstop=4 shiftwidth=4
 au BUfNewFile,BufRead *.yaml   set expandtab tabstop=2 shiftwidth=2
+au BUfNewFile,BufRead *.yml    set expandtab tabstop=2 shiftwidth=2
 au BUfNewFile,BufRead *.sh     set expandtab tabstop=2 shiftwidth=2
 au BUfNewFile,BufRead *.html   set expandtab tabstop=2 shiftwidth=2
 au BUfNewFile,BufRead *.js     set expandtab tabstop=2 shiftwidth=2
