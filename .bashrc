@@ -2,13 +2,8 @@
 eval $(ssh-agent)
 ssh-add
 
-# Does `~/.gpg-agent-info' exist and points to gpg-agent process accepting signals?
-if [[ -f ${HOME}/.gpg-agent-info && -n "$(ps -h $(awk -F ':' '{print $2}' ${HOME}/.gpg-agent-info))" ]]; then
-  #GPG_AGENT_INFO=$(cat ${HOME}/.gpg-agent-info | cut -c 16-)
-  eval $(cat ${HOME}/.gpg-agent-info)
-else
-  # No, gpg-agent not available; start gpg-agent
-  eval $(gpg-agent --daemon --no-grab --write-env-file ${HOME}/.gpg-agent-info)
+if [[ -z "$(ps | grep "gpg-agent" | grep -v grep)" ]]; then
+  gpg-agent --daemon --no-grab
 fi
 
 export GPG_TTY=$(tty)
