@@ -2,7 +2,7 @@
 eval $(ssh-agent)
 ssh-add
 
-if [[ -z "$(ps | grep "gpg-agent" | grep -v grep)" ]]; then
+if [[ $(pkill -0 -c -f /usr/bin/gpg-agent) == 0 ]]; then
   gpg-agent --daemon --no-grab
 fi
 
