@@ -12,6 +12,10 @@ export GPG_AGENT_INFO
 source "${HOME}/.git-completion.bash"
 source "${HOME}/.git-prompt.sh"
 
+if [[ -e "${HOME}/.npm-completion.bash" ]]; then
+  source "${HOME}/.npm-completion.bash"
+fi
+
 PS1='\n'                       # new line
 PS1="$PS1"'\[\033[32m\]'       # change to green
 PS1="$PS1"'\u@\h '             # user@host<space>
