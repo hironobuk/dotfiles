@@ -32,10 +32,9 @@ if dein#load_state('~/.cache/dein')
  " editorconfig
  call dein#add('editorconfig/editorconfig-vim')
 
- " Javascript
+ " Syntax Highlight
  call dein#add('pangloss/vim-javascript')
-
- " Typescript
+ call dein#add('kchmck/vim-coffee-script')
  call dein#add('leafgarland/typescript-vim')
 
  call dein#end()
