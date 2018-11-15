@@ -14,6 +14,9 @@ if [[ -n "$(which npm)" ]]; then
   npm completion > "${HOME}/.npm-completion.bash"
 fi
 
+mkdir -p "${HOME}/.vim/after/syntax"
+curl -s -o "${HOME}/.vim/after/syntax/html.vim" https://raw.githubusercontent.com/hironobuk/dotfiles/master/ng-template.vim
+
 # --list-cmdsオプションが存在しないと怒られるのでしばらくはリビジョンを固定
 curl -s -o "${HOME}/.git-completion.bash" https://raw.githubusercontent.com/git/git/8b4c2e0b1c4ff47c07b2c1bbc937bb46e889755e/contrib/completion/git-completion.bash
 curl -s -o "${HOME}/.git-prompt.sh" https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
