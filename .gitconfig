@@ -1,6 +1,7 @@
 [user]
     email = 
     name = 
+
 [alias]
     ad = add
     br = branch
@@ -15,17 +16,23 @@
     mlog = log --no-merges master..HEAD
     gclean = clean -Xdf
     pr = "!pr() { git fetch ${2:-origin} pull/$1/head:pr$1; git checkout pr$1; }; pr"
+
 [grep]
     lineNumber = true
+
 [color]
     ui = auto
     diff = auto
     status = auto
     branch = auto
+
 [color "grep"]
     linenumber = green
     match = red bold
     filename = magenta
+
 [core]
     editor = vim
 
+[fetch]
+	prune = true
