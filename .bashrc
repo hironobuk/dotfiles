@@ -41,5 +41,5 @@ if [[ -n "$(which docker 2> /dev/null)" ]]; then
   alias docker-stop='sudo docker ps -q | xargs --no-run-if-empty sudo docker stop'
   alias docker-volume-clean="sudo docker volume ls -q -f dangling=true | xargs --no-run-if-empty sudo docker volume rm "
   alias docker-image-clean="sudo docker images -q -f dangling=true | xargs --no-run-if-empty sudo docker rmi "
-  alias docker-clean="docker-volume-clean && docker-volume-clean"
+  alias docker-clean="docker-volume-clean && docker-image-clean"
 fi
