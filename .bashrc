@@ -1,6 +1,16 @@
 # SSHで毎回パスワードを聞かれないようにする
-eval $(ssh-agent)
-ssh-add
+LOCAL_SSH_AGENT="${HOME}/.ssh/ssh-agent-${USER}"
+if [[ -S "${SSH_AUTH_SOCK}" ]]; then
+  if [[ "${SSH_AUTH_SOCK}" =~ ^/tmp/ssh-.+/agent.[0-9]+$ ]]; then
+    ln -s -n -f "${SSH_AUTH_SOCK}" "${LOCAL_SSH_AGENT}"
+    export SSH_AUTH_SOCK="${LOCAL_SSH_AGENT}"
+  fi
+elif [[ -S "${LOCAL_SSH_AGENT}" ]]; then
+  export SSH_AUTH_SOCK="${LOCAL_SSH_AGENT}"
+else
+  eval $(ssh-agent)
+  ssh-add
+fi
 
 if [[ $(pkill -0 -c -f /usr/bin/gpg-agent) == 0 ]]; then
   gpg-agent --daemon --no-grab
