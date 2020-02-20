@@ -54,6 +54,7 @@ set fileencoding=utf-8
 "--------------------------------------------------
 syntax enable
 set synmaxcol=500                  " syntaxで解析するのは1行あたり500文字まで
+set redrawtime=10000               " 重いファイルを開いてもなるべくシンタックスハイライトが効くようにする
 set showcmd                        " コマンドをステータス業に表示
 set showmode                       " 現在のモードを表示
 set nobackup                       " バックアップを取らない
