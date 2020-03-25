@@ -22,7 +22,8 @@ if dein#load_state('~/.cache/dein')
 
  " 自動補完
  call dein#add('Shougo/neocomplcache')
- call dein#add('cohama/lexima.vim')  " 括弧の自動補完
+ call dein#add('cohama/lexima.vim')                                             " 括弧の自動補完
+ call lexima#add_rule({'char': '<', 'input_after': '>', 'filetype': 'html'})    " HTMLファイルでは"<"入力で">"を補完
 
  " colorscheme
  call dein#add('jacoborus/tender.vim')
