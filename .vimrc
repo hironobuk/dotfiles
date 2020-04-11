@@ -38,6 +38,7 @@ if dein#load_state('~/.cache/dein')
  call dein#add('pangloss/vim-javascript')
  call dein#add('kchmck/vim-coffee-script')
  call dein#add('leafgarland/typescript-vim')
+ call dein#add('posva/vim-vue')
 
  call dein#end()
  call dein#save_state()
@@ -105,6 +106,8 @@ au BUfNewFile,BufRead *.html   set expandtab tabstop=2 shiftwidth=2
 au BUfNewFile,BufRead *.js     set expandtab tabstop=2 shiftwidth=2
 au BUfNewFile,BufRead *.css    set expandtab tabstop=2 shiftwidth=2
 au BUfNewFile,BufRead *.json5  set expandtab tabstop=2 shiftwidth=2 filetype=javascript
+au BUfNewFile,BufRead *.ect    set expandtab tabstop=2 shiftwidth=2 filetype=html
+au BUfNewFile,BufRead *.vue    set expandtab tabstop=2 shiftwidth=2 filetype=html
 
 "--------------------------------------------------
 " 前回の位置を記憶させる
