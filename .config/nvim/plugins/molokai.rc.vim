@@ -2,6 +2,7 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
+let g:molokai_original = 1
 autocmd VimEnter * nested colorscheme molokai
 
 " italicをなくす
