@@ -22,6 +22,7 @@ set wrapscan                       " 最後まで検索したら最初に戻る
 set smartcase                      " 検索文字列に大文字が含まれている場合は区別して検索する
 set incsearch                      " インクリメンタルサーチ
 set hlsearch                       " 検索文字列をハイライト
+set inccommand=split
 set autoindent                     " 自動でインデント
 set smartindent                    " 新しい行を開始した時に新しい行のインデントを現在行と同じにする
 set cindent                        " Cプログラムファイルの自動インデントを始める
