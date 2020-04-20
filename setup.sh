@@ -15,7 +15,9 @@ if [[ -n "$(which npm)" ]]; then
 fi
 
 mkdir -p "${HOME}/.vim/after/syntax"
+mkdir -p "${HOME}/.config/nvim/after/syntax"
 curl -s -o "${HOME}/.vim/after/syntax/html.vim" https://raw.githubusercontent.com/hironobuk/dotfiles/master/.vim/ng-template.vim
+curl -s -o "${HOME}/.config/nvim/after/syntax/html.vim" https://raw.githubusercontent.com/hironobuk/dotfiles/master/.vim/ng-template.vim
 
 mkdir -p "${HOME}/.config/nvim/plugins"
 for file in init.vim options.rc.vim keymap.rc.vim dein.toml deinlazy.toml plugins/deoplete.rc.vim plugins/molokai.rc.vim; do
