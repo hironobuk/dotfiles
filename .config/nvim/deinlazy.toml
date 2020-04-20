@@ -1,4 +1,6 @@
-# Syntax Highlight
+# ==========================================================
+#  Syntax Highlight
+# ==========================================================
 [[plugins]]
 repo = 'pangloss/vim-javascript'
 on_ft = ['javascript', 'javascript.jsx']
@@ -13,7 +15,9 @@ on_ft = 'coffee'
 [[plugins]]
 repo = 'posva/vim-vue'
 
-# Auto Complete
+# ==========================================================
+#  Auto Complete
+# ==========================================================
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
 on_i = 1
