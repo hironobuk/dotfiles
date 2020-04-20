@@ -1,0 +1,23 @@
+# Syntax Highlight
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+on_ft = ['javascript', 'javascript.jsx']
+
+[[plugins]]
+repo = 'kchmck/vim-coffee-script'
+on_ft = 'coffee'
+
+#[[plugins]]
+#repo = 'zleafgarland/typescript-vim'
+
+[[plugins]]
+repo = 'posva/vim-vue'
+
+# Auto Complete
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+on_i = 1
+hook_add = '''
+  source ~/.config/nvim/plugins/deoplete.rc.vim
+  call deoplete#enable()
+'''

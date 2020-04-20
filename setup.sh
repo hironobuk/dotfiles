@@ -17,6 +17,11 @@ fi
 mkdir -p "${HOME}/.vim/after/syntax"
 curl -s -o "${HOME}/.vim/after/syntax/html.vim" https://raw.githubusercontent.com/hironobuk/dotfiles/master/.vim/ng-template.vim
 
+mkdir -p "${HOME}/.config/nvim/plugins"
+for file in init.vim options.rc.vim keymap.rc.vim dein.toml deinlazy.toml plugins/deoplete.rc.vim plugins/molokai.rc.vim; do
+  curl -s -o "${HOME}/.config/nvim/${file}" https://raw.githubusercontent.com/hironobuk/dotfiles/master/.config/nvim/${file}
+done
+
 curl -s -o "${HOME}/.git-completion.bash" https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 curl -s -o "${HOME}/.git-prompt.sh" https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 

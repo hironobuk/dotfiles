@@ -1,0 +1,18 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# colorscheme
+[[plugins]]
+repo = 'tomasr/molokai'
+hook_add = '''
+  source ~/.config/nvim/plugins/molokai.rc.vim
+'''
+
+# editor config
+[[plugins]]
+repo = 'editorconfig/editorconfig-vim'
+
+# Auto Complete
+[[plugins]]
+repo = 'cohama/lexima.vim'
+
