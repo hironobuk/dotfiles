@@ -39,7 +39,8 @@ PS1="$PS1"'\[\033[0m\]'        # change color
 PS1="$PS1"'\n'                 # new line
 PS1="$PS1"'$ '                 # prompt: always $
 
-alias vi='vim '
+alias vi='nvim '
+alias vim='nvim '
 alias ls='ls -GF --color '
 alias ll='ls -lhGF --color '
 alias grep='grep --color '
