@@ -20,7 +20,7 @@ curl -s -o "${HOME}/.vim/after/syntax/html.vim" https://raw.githubusercontent.co
 curl -s -o "${HOME}/.config/nvim/after/syntax/html.vim" https://raw.githubusercontent.com/hironobuk/dotfiles/master/.vim/ng-template.vim
 
 mkdir -p "${HOME}/.config/nvim/plugins"
-for file in init.vim options.rc.vim keymap.rc.vim dein.toml deinlazy.toml plugins/deoplete.rc.vim plugins/molokai.rc.vim; do
+for file in init.vim options.rc.vim keymap.rc.vim dein.toml deinlazy.toml plugins/deoplete.rc.vim plugins/molokai.rc.vim plugins/airline.rc.vim plugins/neoterm.rc.vim; do
   curl -s -o "${HOME}/.config/nvim/${file}" https://raw.githubusercontent.com/hironobuk/dotfiles/master/.config/nvim/${file}
 done
 
