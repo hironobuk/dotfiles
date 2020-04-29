@@ -29,7 +29,7 @@ repo = 'cohama/lexima.vim'
 repo = 'kassio/neoterm'
 if = "has('nvim')"
 hook_add = '''
-source ~/.config/nvim/plugins/neoterm.rc.vim
+  source ~/.config/nvim/plugins/neoterm.rc.vim
 '''
 
 # ==========================================================
@@ -45,7 +45,7 @@ repo = 'tpope/vim-fugitive'
 repo = 'vim-airline/vim-airline'
 depends = ['tagbar', 'vim-fugitive']
 hook_add = '''
-source ~/.config/nvim/plugins/airline.rc.vim
+  source ~/.config/nvim/plugins/airline.rc.vim
 '''
 
 # フォントは以下からダウンロードする
@@ -54,17 +54,17 @@ source ~/.config/nvim/plugins/airline.rc.vim
 repo = 'vim-airline/vim-airline-themes'
 depends = 'vim-airline'
 hook_add = '''
-let g:airline_theme='molokai'
+  let g:airline_theme='molokai'
 '''
 
 [[plugins]]
 repo = 'gcmt/taboo.vim'
 depends = 'vim-airline'
 hook_add = '''
-if !has('nvim')
-  set guioptions-=e
-  set sessionoptions+=tabpages,globals
-endif
-let g:taboo_tab_format=' t%N %f%m '
-let g:taboo_tabline = 0
+  if !has('nvim')
+    set guioptions-=e
+    set sessionoptions+=tabpages,globals
+  endif
+  let g:taboo_tab_format=' t%N %f%m '
+  let g:taboo_tabline = 0
 '''
