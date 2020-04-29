@@ -22,6 +22,12 @@ repo = 'editorconfig/editorconfig-vim'
 [[plugins]]
 repo = 'cohama/lexima.vim'
 
+[[plugins]]
+repo = 'AndrewRadev/switch.vim'
+hook_add = '''
+  let g:switch_mapping = '-'
+'''
+
 # ==========================================================
 #  terminal
 # ==========================================================
