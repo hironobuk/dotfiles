@@ -15,6 +15,10 @@ on_ft = 'coffee'
 [[plugins]]
 repo = 'posva/vim-vue'
 
+[[plugins]]
+repo = 'jparise/vim-graphql'
+on_ft = ['graphql']
+
 # ==========================================================
 #  Auto Complete
 # ==========================================================
