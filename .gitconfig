@@ -36,3 +36,4 @@
 
 [fetch]
 	prune = true
+	pruneTags = true
