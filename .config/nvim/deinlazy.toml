@@ -7,7 +7,11 @@ on_ft = ['javascript', 'javascript.jsx']
 
 [[plugins]]
 repo = 'kchmck/vim-coffee-script'
-on_ft = 'coffee'
+on_ft = ['coffee']
+
+[[plugins]]
+repo = 'GutenYe/json5.vim'
+on_ft = ['json5']
 
 #[[plugins]]
 #repo = 'zleafgarland/typescript-vim'
