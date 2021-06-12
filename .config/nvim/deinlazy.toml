@@ -23,6 +23,10 @@ repo = 'posva/vim-vue'
 repo = 'jparise/vim-graphql'
 on_ft = ['graphql']
 
+[[plugins]]
+repo = 'elixir-editors/vim-elixir'
+on_ft = ['elixir']
+
 # ==========================================================
 #  Auto Complete
 # ==========================================================
