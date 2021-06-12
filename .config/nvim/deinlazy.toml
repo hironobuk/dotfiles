@@ -2,7 +2,11 @@
 #  Syntax Highlight
 # ==========================================================
 [[plugins]]
-repo = 'pangloss/vim-javascript'
+repo = 'othree/yajs.vim'
+on_ft = ['javascript', 'javascript.jsx']
+
+[[plugins]]
+repo = 'MaxMEllon/vim-jsx-pretty'
 on_ft = ['javascript', 'javascript.jsx']
 
 [[plugins]]
