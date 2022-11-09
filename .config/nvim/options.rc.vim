@@ -30,6 +30,7 @@ set wildmenu                       " コマンドラインモード時にタブ�
 set shiftwidth=4                   " 自動的に挿入されるインデントの幅
 set tabstop=4                      " ファイルの中のタブをスペース何個分で表示するか
 set backspace=indent,eol,start
+set mouse=
 
 "let g:netrw_liststyle = 3
 
