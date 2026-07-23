@@ -1,0 +1,40 @@
+{
+  "plugins": {
+    "lexima.vim": {
+      "rev": "9f6942c5e1f0f6fe63bdcdac515f34c484b970f5",
+      "src": "https://github.com/cohama/lexima.vim"
+    },
+    "molokai": {
+      "rev": "c67bdfcdb31415aa0ade7f8c003261700a885476",
+      "src": "https://github.com/tomasr/molokai"
+    },
+    "switch.vim": {
+      "rev": "297346b630943ebd4ea58598dfd30bae5debc739",
+      "src": "https://github.com/AndrewRadev/switch.vim"
+    },
+    "taboo.vim": {
+      "rev": "937f67ab9dc2ba1861fabc40ca367e5622c30d36",
+      "src": "https://github.com/gcmt/taboo.vim"
+    },
+    "vim-airline": {
+      "rev": "9e0beefd6e28c92d876559f07d8595f454c08cb7",
+      "src": "https://github.com/vim-airline/vim-airline"
+    },
+    "vim-airline-themes": {
+      "rev": "77aab8c6cf7179ddb8a05741da7e358a86b2c3ab",
+      "src": "https://github.com/vim-airline/vim-airline-themes"
+    },
+    "vim-coffee-script": {
+      "rev": "28421258a8dde5a50deafbfc19cd9873cacfaa79",
+      "src": "https://github.com/kchmck/vim-coffee-script"
+    },
+    "vim-elixir": {
+      "rev": "6dff29176eb35e025bc94b262bf6d4e517e11f7d",
+      "src": "https://github.com/elixir-editors/vim-elixir"
+    },
+    "vim-fugitive": {
+      "rev": "3b753cf8c6a4dcde6edee8827d464ba9b8c4a6f0",
+      "src": "https://github.com/tpope/vim-fugitive"
+    }
+  }
+}
