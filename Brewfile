@@ -12,6 +12,8 @@ brew "git-secret"
 brew "mise"
 # Open source relational database management system
 brew "mysql-client@8.4"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
 vscode "ms-azuretools.vscode-containers"
 vscode "ms-ceintl.vscode-language-pack-ja"
 vscode "ms-vscode-remote.remote-containers"
