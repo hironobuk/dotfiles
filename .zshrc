@@ -1,6 +1,10 @@
+export PATH="$(brew --prefix mysql-client@8.4)/bin:$PATH"
+
 eval "$(mise activate zsh)"
 
-export PATH="$(brew --prefix mysql-client@8.4)/bin:$PATH"
+if command -v direnv >/dev/null 2>&1; then
+  eval "$(direnv hook zsh)"
+fi
 
 alias ..='cd ../'
 alias ....='cd ../../'
