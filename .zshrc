@@ -15,3 +15,24 @@ alias l='ls -lah'
 
 autoload -Uz compinit
 compinit
+
+# Prompt: user@host current-directory (git-branch)
+autoload -Uz add-zsh-hook vcs_info
+setopt prompt_subst
+
+zstyle ':vcs_info:git:*' formats ' %F{cyan}(%b)%f'
+zstyle ':vcs_info:*' enable git
+
+if (( $+commands[scutil] )); then
+  PROMPT_MACHINE_NAME="$(scutil --get ComputerName 2>/dev/null)"
+fi
+: "${PROMPT_MACHINE_NAME:=${HOST%%.*}}"
+
+update_vcs_info() {
+  vcs_info
+}
+add-zsh-hook precmd update_vcs_info
+
+PROMPT='
+%F{green}%n@${PROMPT_MACHINE_NAME}%f %F{yellow}%~%f${vcs_info_msg_0_}
+$ '
