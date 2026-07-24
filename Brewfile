@@ -1,5 +1,7 @@
 # Official Amazon AWS command-line interface
 brew "awscli"
+# Load/unload environment variables based on $PWD
+brew "direnv"
 # GNU awk utility
 brew "gawk"
 # GitHub command-line tool
