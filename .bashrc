@@ -19,6 +19,10 @@ fi
 export GPG_TTY=$(tty)
 export GPG_AGENT_INFO
 
+if [[ -x /home/linuxbrew/.linuxbrew/bin/brew ]]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
 source "${HOME}/.git-completion.bash"
 source "${HOME}/.git-prompt.sh"
 
