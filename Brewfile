@@ -16,6 +16,8 @@ brew "mise"
 brew "mysql-client@8.4"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Plugin for AWS CLI to start and end sessions that connect to managed instances
+cask "session-manager-plugin"
 vscode "ms-azuretools.vscode-containers"
 vscode "ms-ceintl.vscode-language-pack-ja"
 vscode "ms-vscode-remote.remote-containers"
