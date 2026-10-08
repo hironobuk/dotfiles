@@ -6,6 +6,8 @@ brew "direnv"
 brew "gawk"
 # GitHub command-line tool
 brew "gh"
+# Distributed revision control system
+brew "git"
 # GNU Privacy Guard (OpenPGP)
 brew "gnupg"
 # Bash-tool to store the private data inside a git repo
@@ -18,10 +20,12 @@ brew "mysql-client@8.4"
 brew "tree"
 # Plugin for AWS CLI to start and end sessions that connect to managed instances
 cask "session-manager-plugin"
+vscode "mrmlnc.vscode-json5"
 vscode "ms-azuretools.vscode-containers"
 vscode "ms-ceintl.vscode-language-pack-ja"
 vscode "ms-vscode-remote.remote-containers"
 vscode "openai.chatgpt"
+vscode "openai.codex-audio"
 vscode "ronnidc.nunjucks"
 vscode "vue.volar"
 npm "corepack"
