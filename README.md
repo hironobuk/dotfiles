@@ -29,6 +29,12 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 brew bundle
 ```
 
+パッケージ新規追加などした場合に Brewfile を更新する場合は以下のコマンドで更新する。
+
+```bash
+brew bundle dump --force
+```
+
 ## Runtime
 
 ```bash
