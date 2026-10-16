@@ -16,6 +16,8 @@ brew "git-secret"
 brew "mise"
 # Open source relational database management system
 brew "mysql-client@8.4"
+# Password generator
+brew "pwgen"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Plugin for AWS CLI to start and end sessions that connect to managed instances
