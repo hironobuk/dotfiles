@@ -1,4 +1,5 @@
 export PATH="$(brew --prefix mysql-client@8.4)/bin:$PATH"
+export PATH="$(brew --prefix curl)/bin:$PATH"
 
 eval "$(mise activate zsh)"
 

@@ -1,5 +1,7 @@
 # Official Amazon AWS command-line interface
 brew "awscli"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
 # Load/unload environment variables based on $PWD
 brew "direnv"
 # GNU awk utility
